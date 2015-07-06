@@ -21,6 +21,7 @@
       }
 
       $httpBackend.requests = function() {
+        digestAFewTimesSoDeferredRequestsShowUp();
         return requests.slice();
       };
 
